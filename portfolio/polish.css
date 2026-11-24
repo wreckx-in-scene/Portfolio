@@ -1,0 +1,23 @@
+.portrait > img { position: relative; z-index: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 26%; filter: saturate(.72) contrast(1.06) sepia(.1); transform: scale(1.03); transition: transform .6s ease, filter .4s ease; }
+.portrait::before, .portrait::after { display: none; }
+.profile-card { transition: transform .32s ease, box-shadow .32s ease; }
+.profile-card:hover { transform: translate(-4px, -4px); box-shadow: 13px 13px 0 var(--shadow); }
+.profile-card:hover .portrait > img { transform: scale(1.08); filter: saturate(.9) contrast(1.07) sepia(.06); }
+.portrait:before, .portrait:after, .portrait-code, .portrait i { z-index: 2; }
+.portrait:after { inset: 24px; mix-blend-mode: screen; }
+.portrait i { width: 70px; height: 70px; left: 30px; top: 30px; border-width: 4px; box-shadow: 7px 7px 0 var(--shadow); }
+.portrait-code { color: #ffe3bb; text-shadow: 0 1px 4px #120e0c; }
+.button, .hero-socials a, .project, .contact-copy > a, .contact-form button { transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease, color .18s ease; }
+.button:hover { transform: translate(-2px, -2px); background: var(--panel); }
+.button.solid:hover { box-shadow: 10px 10px 0 var(--shadow); background: var(--line); }
+.hero-socials a:hover { background: var(--accent); color: var(--dark); transform: translateY(-3px); }
+.hero-socials svg { width: 21px; height: 21px; fill: currentColor; }
+.project:hover { transform: translate(-4px, -4px); box-shadow: 12px 12px 0 var(--shadow); }
+.project a:hover { color: var(--text); }
+.contact-copy > a:hover { background: var(--accent); color: var(--dark); }
+.contact-form input:focus, .contact-form textarea:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+.contact-form button:hover { transform: translate(-3px, -3px); box-shadow: 10px 10px 0 var(--shadow); }
+.skills { width: 100%; margin-left: 0; margin-right: 0; }
+.skill-board > * { min-width: 0; }
+.skill-board li, .skill-board h3, .exploring { overflow-wrap: anywhere; }
+@media (prefers-reduced-motion: reduce) { .portrait > img, .profile-card, .button, .hero-socials a, .project, .contact-copy > a, .contact-form button { transition: none; } }

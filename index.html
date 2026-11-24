@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Amogh Dandotiya — backend engineer building reliable distributed systems." />
+    <meta name="theme-color" content="#e1e4e5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121312" media="(prefers-color-scheme: dark)" />
+    <title>Amogh Dandotiya — Links</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar-inner">
+        <a class="logo" href="#home" aria-label="Amogh Dandotiya home">AMOGH<span>.</span>SYS</a>
+        <span class="sys-status" aria-hidden="true">SYS/OK</span>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <span class="sun" aria-hidden="true">☀</span><span class="moon" aria-hidden="true">☾</span>
+        </button>
+      </div>
+    </header>
+
+    <div class="page" id="home">
+      <main class="card">
+        <div class="avatar monogram" role="img" aria-label="Amogh Dandotiya monogram">AD<span>_</span></div>
+        <h1>Amogh Dandotiya</h1>
+        <p class="bio">CSE student building reliable distributed systems with Go, C++, and PostgreSQL.</p>
+
+        <nav class="routes" aria-label="Project and contact links">
+          <a class="route route-active" href="portfolio/index.html">
+            <span class="route-main"><span class="route-method">GET</span><span class="route-path">/portfolio</span><span class="route-label">View My Portfolio</span></span>
+            <span class="route-meta"><span class="route-status">200 OPEN</span><span class="route-arrow">›</span></span>
+          </a>
+          <a class="route" href="https://github.com/wreckx-in-scene/AuthForge" target="_blank" rel="noreferrer">
+            <span class="route-main"><span class="route-method">GET</span><span class="route-path">/authforge</span><span class="route-label">Explore AuthForge</span></span>
+            <span class="route-meta"><span class="route-status">200 REPO</span><span class="route-arrow">›</span></span>
+          </a>
+          <a class="route" href="https://github.com/wreckx-in-scene?tab=repositories" target="_blank" rel="noreferrer">
+            <span class="route-main"><span class="route-method">GET</span><span class="route-path">/projects</span><span class="route-label">Browse My Projects</span></span>
+            <span class="route-meta"><span class="route-status">200 LIST</span><span class="route-arrow">›</span></span>
+          </a>
+          <a class="route" href="mailto:amoghdandotiya123@gmail.com">
+            <span class="route-main"><span class="route-method">POST</span><span class="route-path">/contact</span><span class="route-label">Send Email</span></span>
+            <span class="route-meta"><span class="route-status">201 MAIL</span><span class="route-arrow">›</span></span>
+          </a>
+        </nav>
+
+        <div class="socials" aria-label="Profiles">
+          <a class="social-link" href="https://github.com/wreckx-in-scene" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+          <a class="social-link" href="mailto:amoghdandotiya123@gmail.com" aria-label="Email">@</a>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
